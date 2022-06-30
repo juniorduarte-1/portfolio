@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 
 .container{
@@ -31,16 +32,16 @@
     
 }
 
-.header_menu{
+.header__menu{
     display: flex;
     gap: 20px;
 }
 
-.header_menu li{
+.header__menu li{
     list-style: none;
 }
 
-.header_menu a{
+.header__menu a{
     list-style: none;
     font-size: 1rem;
     text-transform: uppercase;
@@ -51,21 +52,23 @@
     padding: 20px;
 }
 
-.header_menu a:hover{
+.header__menu a:hover{
     color: var(--color-menu-hover);
     transition: .2s;
 }
 
-.introducao{
+.intro{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+    align-items: center;
     padding: 40px 60px;
-    margin-top: 120px;
-    margin-bottom: 120px;
+    margin: 120px 0;
+    
+  
 }
 
-.subtitulo_primario{
+.subtitle__intro{
     font-size: 1.5rem;
     text-transform: uppercase;
     color: var(--sub-title);
@@ -74,7 +77,7 @@
     padding-bottom: 14px;
 }
 
-.titulo_primario{
+.title__intro{
     font-size: 5rem;
     text-transform: uppercase;
     color: var(--title);
@@ -83,45 +86,226 @@
     line-height: 1;
 }
 
-.secao_primaria{
+.primary{
     background-color: var(--color-bgdark);
     padding: 40px 60px;
-    
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center; 
        
 }
 
-.subtitulo{
+.title_sobre{
     font-size: 7rem;
     text-transform: uppercase;
     color: var(--title);
     font-family: 'Fira Sans', sans-serif;
-    max-width: 4ch;
+    max-width: 6ch;
+    word-break: break-all;
+    text-align: right;
     line-height: 1;
-    margin-top: 120px;
-    margin-bottom: 120px;
-    
+    margin-top: 60px;
+    margin-bottom: 60px;  
+
    
 }
 
-.texto_sobre{
-    font-size: 1.2rem;
+.sobremim__text{
+    
+    font-size: 1.3rem;
+    line-height: 1.33;
     color: var(--sub-title);
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    max-width: 32ch;
-    
+    max-width: 40ch;
+    align-items: center;       
 
+}
+
+.sobremim__text strong{
+    color: #ffffff;
+}
+
+.sobremim_group{
+    margin: 120px auto; 
+    
 }
 
 .sobremim_group h3:nth-child(1){
+    font-size: 2rem;
     color: #ffffff;
     font-family: 'Fira Sans', sans-serif;
+    margin-bottom: 12px;    
+    display: inline-block;
 }
 .sobremim_group h3:nth-child(2){
+    font-size: 1.3rem;
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
+    margin-bottom: 12px;
+    
 }
 
-.secao_terceira{
+.cursos{
+    padding: 40px 60px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center; 
+    gap: 120px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+       
+}
+
+.title_cursos{
+    color: #C2C2C2;
+    font-size: 7rem;
+    text-transform: uppercase;   
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 1;
+
+}
+
+.box_cursos{  
+    background-color: #FAFAFA;
+    border: 0.1px solid #C2C2C2;
+    border-radius: 5px;
+    padding: 20px 40px;
+    width: 500px;
+    margin: 10px 0;
+}
+.curso__content{
+    display: flex;
+    justify-content: space-between; 
+    
+}
+
+
+.item__curso h3{
+    font-size: 0.95rem;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
+    color: var(--color-bgdark);
+    text-align: center;
+}
+
+.item__curso p{
+    font-size: 0.75rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin-top: 12px;
+    color: #292929;
+    text-align: center;
+}
+.independentes{
+    color: #141414;
+    font-size: 0.95rem;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
+    margin: 20px 20px;
+
+}
+.cursos_independentes{
+    display: flex;
+    justify-content: space-between;
     background-color: #2E931D;
+    border: 0.1px solid #168804;
+    border-radius: 5px;
+    padding: 20px 40px;
+    width: 300px;
+}
+
+.cursos_independentes h3{
+    font-size: 0.95rem;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
+    color: rgb(37, 37, 37);
+}
+
+.cursos_independentes p{
+    font-size: 0.75rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin-top: 12px;
+    color: #1b1b1b;
+    
+}
+
+.cursos_independentes .description_periodo{
+    text-align: right;
+}
+
+.projetos{
+    padding: 40px 60px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center; 
+    gap: 200px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    background-color: #141414;
+}
+
+.title_projetos{
+    color: #000;
+    font-size: 7rem;
+    text-transform: uppercase;   
+    font-family: 'Fira Sans', sans-serif;
+    max-width: 16ch;
+    word-break: break-all;
+    text-align: right;
+    line-height: 1;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+}
+
+.box{
+    max-width: 600px;
+    background-color: #000000;
+    border-radius: 5px;
+    padding: 40px 40px;
+}
+
+.projeto_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.projeto__item{
+    width: 300px;
+     
+}
+.projeto__item img{
+    max-width: 100%;
+}
+
+.projeto__item a{
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #141414;
+    color: #A3A3A3;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+.vejamais{
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #4d4c4c;
+    cursor: pointer;
+    margin-top: 20px;
 }
