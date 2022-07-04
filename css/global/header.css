@@ -1,0 +1,33 @@
+
+.header{
+    padding: 40px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.header__menu{
+    display: flex;
+    gap: 20px;
+}
+
+.header__menu li{
+    list-style: none;
+}
+
+.header__menu a{
+    list-style: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.header__menu a:hover{
+    color: var(--color-menu-hover);
+    transition: .2s;
+}

@@ -1,0 +1,93 @@
+.footer{
+    display: flex;
+    padding: 60px 60px;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer_description h3{
+    position: relative;
+}
+
+.footer_description h3::before{
+    content: '';
+    position: absolute;
+    background: url(../../assets/icon/detalhes.svg) no-repeat center;
+    width: 12px;
+    height: 6px;
+    top: 6px;
+    left: -18px;
+}
+.list__contact,
+.list__info{
+    margin-top: 12px;
+}
+
+.list__contact li{
+    margin-left: 5px;
+}
+
+.list__contact li,
+.list__info li{
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.list__contact li:nth-child(1){
+    font-size: 0.85rem;
+    font-family: 'Roboto', sans-serif;
+    color: #4d4c4c;
+}
+
+.list__info li{
+    text-align: right;
+    
+}
+.list__info li a{
+    position: relative;
+}
+
+.list__info li a::after{
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    width: 0px;
+    height: 1px;
+    background-color: #fff;
+    transition: .3s;
+}
+
+.list__info li a:hover::after{
+    width: 100%;
+}
+
+.list__contact a,
+.list__info a{
+    
+    text-decoration: none;
+}
+.list__contact li:nth-child(1)::before{
+    content: '';
+    position: absolute;
+    background: url(../assets/icon/email.svg) no-repeat center ;
+    width: 16px;
+    height: 16px;
+    left: -24px;
+}
+
+.list__contact li:nth-child(2)::before{
+    content: '';
+    position: absolute;
+    background: url(../assets/icon/github.svg) no-repeat center ;
+    width: 16px;
+    height: 16px;
+    left: -24px;
+}
+.list__contact li:nth-child(3)::before{
+    content: '';
+    position: absolute;
+    background: url(../assets/icon/linkedin.svg) no-repeat center ;
+    width: 16px;
+    height: 16px;
+    left: -24px;
+}
