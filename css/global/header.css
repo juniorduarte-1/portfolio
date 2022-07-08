@@ -14,20 +14,37 @@
 
 .header__menu li{
     list-style: none;
+
 }
 
 .header__menu a{
-    list-style: none;
-    font-size: 1rem;
-    text-transform: uppercase;
-    color: #ffffff;
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: 500;
     text-decoration: none;
-    padding: 20px;
+    color: var(--color-c0);
+    position: relative;
 }
 
-.header__menu a:hover{
-    color: var(--color-menu-hover);
-    transition: .2s;
+  
+.header__menu li a::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    width: 0px;
+    height: 1px;
+    background: var(--color-c0);
+    transition: .3s;
+}
+
+.header__menu li a:hover::after {
+    width: 100%;
+}
+
+@media (max-width: 800px){
+    .header{
+        display: block;
+        margin: 0 auto;
+    }
+    .header img{
+    
+    }
 }
