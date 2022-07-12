@@ -1,8 +1,8 @@
 .footer{
-    display: flex;
-    padding: 60px 60px;
-    justify-content: space-around;
-    align-items: center;
+   display: flex;
+   justify-content: space-around;
+    padding: 40px 60px;
+    
 }
 
 .footer_description h3{

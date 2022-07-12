@@ -6,6 +6,7 @@
     --bgdark: #141414;
     --bgwhite: #ffffff;
     --bgprimary: #1A710C;
+    --bgprimary2: #0A4701;
 
     /*componentes */
 
@@ -108,4 +109,7 @@
 }
 .bgprimary{
     background-color: var(--bgprimary);
+}
+.bgprimary2{
+    background-color: var(--bgprimary2);
 }

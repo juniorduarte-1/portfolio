@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,47 +13,54 @@
     <!--  LINK DAS FONTES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <header class="header bgdark">       
-            <img src="assets/img/logo.svg" alt="">
-                <nav aria-label="Navegação Principal">
-                    <ul class="header__menu font-1-p color-c0">
-                        <li><a href="#sobremim">sobre mim</a></li>
-                        <li><a href="#cursos">cursos</a></li>
-                        <li><a href="#projetos">meus projetos</a></li>
-                    </ul>
-                </nav>  
+    <header class="header bgdark">
+        <img src="assets/img/logo.svg" alt="">
+        <nav aria-label="Navegação Principal">
+            <ul class="header__menu font-1-p color-c0">
+                <li><a href="#sobremim">sobre mim</a></li>
+                <li><a href="#cursos">cursos</a></li>
+                <li><a href="#projetos">meus projetos</a></li>
+            </ul>
+        </nav>
     </header>
-    <main class="bgwhite intro">
-        <div class="container">
-            <div>
-                <h2 class="font-1-m color-c9">Olá<span class="color-p4">,</span><br/> me chamo Junior e sou</br>
-                <h1 class="font-1-xg color-c10">Desenvolvedor Front-end</h1>
+    <main class="bgwhite">
+        <div class="intro container">
+            <div class="intro_texto">
+                <h2 class="font-1-m color-c9">Olá<span class="color-p4">,</span><br /> me chamo Junior e sou</br>
+                    <h1 class="font-1-xg color-c10">Desenvolvedor Front-end</h1>
+            </div>
+            <div class="intro_img">
+               <img src="assets/img/perfil.jpg" alt="">
             </div>
         </div>
-        
+
     </main>
-    <section class="bgprimary sobremim" id="sobremim" aria-label="Primeira seção">
-        <div class="container">        
-            <h2 class="font-1-xxg color-p1">Sobre <br>mim</h2>
+    <section class="bgprimary2" id="sobremim" aria-label="Primeira seção">
+        <div class="sobremim container">
+            <h2 class="font-1-xxg color-p2">Sobre <br>mim</h2>
             <div class="sobremim_conteudo">
-                <h3 class="font-1-m color-c0" >Alex Pinheiro</h3>
-                <h3 class="font-2-p color-c0">Igarassu, Pernambuco.</h3>
-                <p class="font-2-p-1 color-c5">Iniciei meus estudos em programação por volta do ano de 2012, 
-                    onde fiz um <strong class="color-c0">Curso Técnico</strong>. Agora voltei a estudar programação por conta própria, buscando uma migração do ramo que trabalho atualmente.</p>
-                </div>
-            </div>    
-        </section>
-        <section class="cursos" id="cursos" aria-label="Segunda seção">
-        <div class="container">
+                <h3 class="font-1-m color-c2">Alex Pinheiro</h3>
+                <h3 class="font-2-p color-c1">Igarassu, Pernambuco.</h3>
+                <p class="font-2-p-1 color-c4">Iniciei meus estudos em programação por volta do ano de 2012,
+                    onde fiz um <strong class="color-c3">Curso Técnico</strong>. Agora voltei a estudar programação por
+                    conta própria, buscando uma migração do ramo que trabalho atualmente.</p>
+            </div>
+        </div>
+    </section>
+    <section id="cursos" aria-label="Segunda seção">
+        <div class="cursos container">
             <div class="bloco_cursos">
                 <div class="box_cursos">
                     <ul class="list_cursos">
                         <li>
                             <h3 class="font-1-p color-c9">Nível</h3>
-                            <p class="font-1-pp color-c6">Técnico</p>                   
+                            <p class="font-1-pp color-c6">Técnico</p>
                         </li>
                         <li>
                             <h3 class="font-1-p color-c9">Curso</h3>
@@ -68,7 +76,7 @@
                     <ul class="list_cursos">
                         <li>
                             <h3 class="font-1-p color-c9">Nível</h3>
-                            <p class="font-1-pp color-c6">Graduação</p>                   
+                            <p class="font-1-pp color-c6">Graduação</p>
                         </li>
                         <li>
                             <h3 class="font-1-p color-c9">Curso</h3>
@@ -87,127 +95,172 @@
                             <h3 class="font-1-p color-c9">Cursos</h3>
                             <p class="font-1-pp color-c10">UI Design Iniciante</p>
                             <p class="font-1-pp color-c10">HTML e CSS Iniciante</p>
-                            
+
                         </li>
                         <li>
                             <h3 class="font-1-p color-c9">Período</h3>
                             <span class="font-1-pp color-c10">36h</span>
                             <span class="font-1-pp color-c10">42h</span>
-                        </li>          
+                        </li>
                     </ul>
                 </div>
             </div>
             <h2 class="font-1-xxg color-c4">cursos</h2>
-            
-</section>
-<section class="bgwhite projetos">
-    <h2 class="font-1-xg color-p2">Meus Projetos</h2>
-    <div class="container">
-        <div class="box_projetos">
-            <div class="meusprojetos">
-                <div>                    
-                    <a title="Cardápio Digital" href="#"><img src="assets/img/cardapio.jpg" alt="Cardápio Digital"></a>
-                </div>
-                <div>
-                    
-                    <a title="Landing Page" href="#"><img src="assets/img/lading.jpg" alt="Landing Page"></a>
+
+    </section>
+    <section class="bgwhite" id="projetos">
+        <div class="projetos container">
+            <h2 class="font-1-xg color-p2">Meus Projetos</h2>
+            <div class="box_projetos">
+                <div class="meusprojetos">
+                    <div>
+                        <a title="Cardápio Digital" href="#"><img src="assets/img/cardapio.jpg"
+                                alt="Cardápio Digital"></a>
+                    </div>
+                    <div>
+
+                        <a title="Landing Page" href="#"><img src="assets/img/lading.jpg" alt="Landing Page"></a>
+                    </div>
                 </div>
             </div>
-        </div> 
-    </div>
-    <div class="tecnologia">
-        <h4 class="font-2-p color-c7">técnologias utilizadas</h4>
-        <h3 class="font-2-g color-c10">nível basico</h3>
+        </div>
+        <div class="tecnologia">
+            <h4 class="font-2-p color-c7">técnologias utilizadas</h4>
+            <h3 class="font-2-g color-c10">nível basico</h3>
             <div class="tecnologias_items">
                 <!-- HTML -->
                 <svg width="195" height="170" viewBox="0 0 195 170" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_4_40)">
-                    <path d="M166.147 33.2941L153.612 155.789L97.2668 169.415L41.0772 155.808L28.5555 33.2941H166.147Z" fill="#E44D26"/>
-                    <path d="M97.3511 159L142.88 147.989L153.592 43.3114H97.3511V159Z" fill="#F16529"/>
-                    <path d="M72.9838 73.3634H97.3511V58.3374H54.1591L54.5714 62.3686L58.8049 103.776H97.3511V88.7501H74.5579L72.9838 73.3634Z" fill="#EBEBEB"/>
-                    <path d="M76.8657 111.289H59.5746L61.9878 134.882L97.2718 143.426L97.3511 143.407V127.774L97.2756 127.791L78.0921 123.273L76.8657 111.289Z" fill="#EBEBEB"/>
-                    <path d="M41.3571 0H50.1105V7.54427H58.1179V0H66.8718V22.8459H58.1183V15.1958H50.1109V22.8459H41.3574V0H41.3571Z" fill="black"/>
-                    <path d="M78.383 7.57604H70.6768V0H94.8468V7.57604H87.1372V22.8459H78.3833V7.57604H78.383Z" fill="black"/>
-                    <path d="M98.6827 0H107.81L113.425 8.02737L119.034 0H128.165V22.8459H119.447V11.5222L113.425 19.6452H113.274L107.248 11.5222V22.8459H98.6827V0Z" fill="black"/>
-                    <path d="M132.521 0H141.277V15.2944H153.587V22.8459H132.521V0Z" fill="black"/>
-                    <path d="M97.2915 103.776H118.502L116.503 123.263L97.2915 127.787V143.419L132.604 134.882L132.863 132.343L136.91 92.7851L137.331 88.7502H97.2915V103.776Z" fill="white"/>
-                    <path d="M97.2915 73.3267V73.3634H138.898L139.244 69.986L140.028 62.3686L140.44 58.3374H97.2915V73.3267Z" fill="white"/>
+                        <path
+                            d="M166.147 33.2941L153.612 155.789L97.2668 169.415L41.0772 155.808L28.5555 33.2941H166.147Z"
+                            fill="#E44D26" />
+                        <path d="M97.3511 159L142.88 147.989L153.592 43.3114H97.3511V159Z" fill="#F16529" />
+                        <path
+                            d="M72.9838 73.3634H97.3511V58.3374H54.1591L54.5714 62.3686L58.8049 103.776H97.3511V88.7501H74.5579L72.9838 73.3634Z"
+                            fill="#EBEBEB" />
+                        <path
+                            d="M76.8657 111.289H59.5746L61.9878 134.882L97.2718 143.426L97.3511 143.407V127.774L97.2756 127.791L78.0921 123.273L76.8657 111.289Z"
+                            fill="#EBEBEB" />
+                        <path
+                            d="M41.3571 0H50.1105V7.54427H58.1179V0H66.8718V22.8459H58.1183V15.1958H50.1109V22.8459H41.3574V0H41.3571Z"
+                            fill="black" />
+                        <path d="M78.383 7.57604H70.6768V0H94.8468V7.57604H87.1372V22.8459H78.3833V7.57604H78.383Z"
+                            fill="black" />
+                        <path
+                            d="M98.6827 0H107.81L113.425 8.02737L119.034 0H128.165V22.8459H119.447V11.5222L113.425 19.6452H113.274L107.248 11.5222V22.8459H98.6827V0Z"
+                            fill="black" />
+                        <path d="M132.521 0H141.277V15.2944H153.587V22.8459H132.521V0Z" fill="black" />
+                        <path
+                            d="M97.2915 103.776H118.502L116.503 123.263L97.2915 127.787V143.419L132.604 134.882L132.863 132.343L136.91 92.7851L137.331 88.7502H97.2915V103.776Z"
+                            fill="white" />
+                        <path
+                            d="M97.2915 73.3267V73.3634H138.898L139.244 69.986L140.028 62.3686L140.44 58.3374H97.2915V73.3267Z"
+                            fill="white" />
                     </g>
                     <defs>
-                    <clipPath id="clip0_4_40">
-                    <rect width="194.702" height="169.844" fill="white"/>
-                    </clipPath>
-                    </defs>
-                    </svg>
-                    <!-- CSS -->
-                    <svg width="195" height="170" viewBox="0 0 195 170" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_4_26)">
-                        <path d="M97.3794 169.415L41.1897 155.808L28.6681 33.2939H166.259L153.724 155.789L97.3794 169.415Z" fill="#264DE4"/>
-                        <path d="M142.993 147.989L153.705 43.3113H97.4636V159L142.993 147.989Z" fill="#2965F1"/>
-                        <path d="M57.3737 88.75L58.9175 103.776H97.4636V88.75H57.3737Z" fill="#EBEBEB"/>
-                        <path d="M54.2716 58.3373L55.8374 73.3633H97.4636V58.3373H54.2716Z" fill="#EBEBEB"/>
-                        <path d="M97.4636 127.774L97.3882 127.791L78.2046 123.273L76.9783 111.289H59.6871L62.1003 134.882L97.3844 143.426L97.4636 143.407V127.774Z" fill="#EBEBEB"/>
-                        <path d="M61.0492 -0.00012207H81.9116V7.61033H69.7735V15.2208H81.9116V22.8312H61.0492V-0.00012207Z" fill="black"/>
-                        <path d="M86.0841 -0.00012207H106.947V6.61766H94.8084V7.94122H106.947V23.1621H86.0841V16.2134H98.2222V14.8899H86.0841V-0.00012207Z" fill="black"/>
-                        <path d="M111.119 -0.00012207H131.981V6.61766H119.843V7.94122H131.981V23.1621H111.119V16.2134H123.257V14.8899H111.119V-0.00012207Z" fill="black"/>
-                        <path d="M137.443 88.75L140.553 58.3373H97.4041V73.3633H121.676L120.108 88.75H97.4041V103.776H118.615L116.615 123.263L97.4041 127.786V143.419L132.716 134.882L132.975 132.343L137.023 92.7848L137.443 88.75Z" fill="white"/>
-                        </g>
-                        <defs>
-                        <clipPath id="clip0_4_26">
-                        <rect width="194.702" height="169.844" fill="white" transform="translate(0.112549 -0.00012207)"/>
+                        <clipPath id="clip0_4_40">
+                            <rect width="194.702" height="169.844" fill="white" />
                         </clipPath>
-                        </defs>
-                        </svg>
-                        <!-- JS -->  
-                        <svg width="159" height="170" viewBox="0 0 159 170" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_4_37)">
-                            <path d="M158.374 -0.00012207H0.271444C0.245848 -0.00012207 0.225098 0.0221558 0.225098 0.049637V169.794C0.225098 169.822 0.245848 169.844 0.271444 169.844H158.374C158.4 169.844 158.42 169.822 158.42 169.794V0.049637C158.42 0.0221558 158.4 -0.00012207 158.374 -0.00012207Z" fill="#F7DF1E"/>
-                            <path d="M100.333 122.739C103.423 128.378 107.748 132.359 114.855 132.359C121.034 132.359 125.051 129.042 125.051 124.398C125.051 119.09 121.034 117.1 114.237 113.782L110.529 112.124C99.7151 107.148 92.6087 101.177 92.6087 88.2393C92.6087 76.2972 100.951 67.0088 114.237 67.0088C123.815 67.0088 130.613 70.6578 135.247 79.9462L123.815 87.9076C121.343 82.9317 118.563 80.9413 114.237 80.9413C109.911 80.9413 107.131 83.9269 107.131 87.9076C107.131 92.5518 109.911 94.5422 116.4 97.5277L120.107 99.1863C132.775 105.157 139.882 110.797 139.882 124.398C139.882 138.662 129.377 146.623 115.164 146.623C101.26 146.623 92.2997 139.657 87.974 130.369L100.333 122.739ZM47.8072 124.066C50.279 128.378 52.1329 132.359 57.3855 132.359C62.3291 132.359 65.4188 130.369 65.4188 122.407V67.3405H80.2496V121.744C80.2496 138.33 71.2894 145.628 58.0034 145.628C45.9534 145.628 39.1559 138.994 35.7572 131.032L47.8072 124.066Z" fill="black"/>
-                            </g>
-                            <defs>
-                            <clipPath id="clip0_4_37">
-                            <rect width="158.195" height="169.844" fill="white" transform="translate(0.225098 -0.00012207)"/>
-                            </clipPath>
-                            </defs>
-                            </svg>
-                            <!-- FIGMA -->
-                            <svg width="195" height="170" viewBox="0 0 195 170" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_4_52)">
-                                <path d="M129.801 113.23C147.723 113.23 162.252 100.556 162.252 84.9221C162.252 69.2884 147.723 56.6147 129.801 56.6147C111.88 56.6147 97.3511 69.2884 97.3511 84.9221C97.3511 100.556 111.88 113.23 129.801 113.23Z" fill="#19BCFE"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M64.9007 169.844C82.8225 169.844 97.351 157.171 97.351 141.537C97.351 137.269 97.351 127.833 97.351 113.229C82.773 113.229 71.9562 113.229 64.9007 113.229C46.9788 113.229 32.4503 125.903 32.4503 141.537C32.4503 157.171 46.9788 169.844 64.9007 169.844Z" fill="#09CF83"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M64.9007 113.23C70.8746 113.23 81.6914 113.23 97.351 113.23V56.6147C81.6914 56.6147 70.8746 56.6147 64.9007 56.6147C46.9788 56.6147 32.4503 69.2884 32.4503 84.9221C32.4503 100.556 46.9788 113.23 64.9007 113.23Z" fill="#A259FF"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M64.9007 56.6148C70.8746 56.6148 81.6914 56.6148 97.351 56.6148V0C81.6914 0 70.8746 0 64.9007 0C46.9788 0 32.4503 12.6737 32.4503 28.3074C32.4503 43.9411 46.9788 56.6148 64.9007 56.6148Z" fill="#F24E1E"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M129.801 56.6148H97.3511V0H129.801C147.723 0 162.252 12.6737 162.252 28.3074C162.252 43.9411 147.723 56.6148 129.801 56.6148Z" fill="#FF7262"/>
-                                </g>
-                                <defs>
-                                <clipPath id="clip0_4_52">
-                                <rect width="194.702" height="169.844" fill="white"/>
-                                </clipPath>
-                                </defs>
-                                </svg>                        
-                                    
+                    </defs>
+                </svg>
+                <!-- CSS -->
+                <svg width="195" height="170" viewBox="0 0 195 170" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_4_26)">
+                        <path
+                            d="M97.3794 169.415L41.1897 155.808L28.6681 33.2939H166.259L153.724 155.789L97.3794 169.415Z"
+                            fill="#264DE4" />
+                        <path d="M142.993 147.989L153.705 43.3113H97.4636V159L142.993 147.989Z" fill="#2965F1" />
+                        <path d="M57.3737 88.75L58.9175 103.776H97.4636V88.75H57.3737Z" fill="#EBEBEB" />
+                        <path d="M54.2716 58.3373L55.8374 73.3633H97.4636V58.3373H54.2716Z" fill="#EBEBEB" />
+                        <path
+                            d="M97.4636 127.774L97.3882 127.791L78.2046 123.273L76.9783 111.289H59.6871L62.1003 134.882L97.3844 143.426L97.4636 143.407V127.774Z"
+                            fill="#EBEBEB" />
+                        <path
+                            d="M61.0492 -0.00012207H81.9116V7.61033H69.7735V15.2208H81.9116V22.8312H61.0492V-0.00012207Z"
+                            fill="black" />
+                        <path
+                            d="M86.0841 -0.00012207H106.947V6.61766H94.8084V7.94122H106.947V23.1621H86.0841V16.2134H98.2222V14.8899H86.0841V-0.00012207Z"
+                            fill="black" />
+                        <path
+                            d="M111.119 -0.00012207H131.981V6.61766H119.843V7.94122H131.981V23.1621H111.119V16.2134H123.257V14.8899H111.119V-0.00012207Z"
+                            fill="black" />
+                        <path
+                            d="M137.443 88.75L140.553 58.3373H97.4041V73.3633H121.676L120.108 88.75H97.4041V103.776H118.615L116.615 123.263L97.4041 127.786V143.419L132.716 134.882L132.975 132.343L137.023 92.7848L137.443 88.75Z"
+                            fill="white" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_4_26">
+                            <rect width="194.702" height="169.844" fill="white"
+                                transform="translate(0.112549 -0.00012207)" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <!-- JS -->
+                <svg width="159" height="170" viewBox="0 0 159 170" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_4_37)">
+                        <path
+                            d="M158.374 -0.00012207H0.271444C0.245848 -0.00012207 0.225098 0.0221558 0.225098 0.049637V169.794C0.225098 169.822 0.245848 169.844 0.271444 169.844H158.374C158.4 169.844 158.42 169.822 158.42 169.794V0.049637C158.42 0.0221558 158.4 -0.00012207 158.374 -0.00012207Z"
+                            fill="#F7DF1E" />
+                        <path
+                            d="M100.333 122.739C103.423 128.378 107.748 132.359 114.855 132.359C121.034 132.359 125.051 129.042 125.051 124.398C125.051 119.09 121.034 117.1 114.237 113.782L110.529 112.124C99.7151 107.148 92.6087 101.177 92.6087 88.2393C92.6087 76.2972 100.951 67.0088 114.237 67.0088C123.815 67.0088 130.613 70.6578 135.247 79.9462L123.815 87.9076C121.343 82.9317 118.563 80.9413 114.237 80.9413C109.911 80.9413 107.131 83.9269 107.131 87.9076C107.131 92.5518 109.911 94.5422 116.4 97.5277L120.107 99.1863C132.775 105.157 139.882 110.797 139.882 124.398C139.882 138.662 129.377 146.623 115.164 146.623C101.26 146.623 92.2997 139.657 87.974 130.369L100.333 122.739ZM47.8072 124.066C50.279 128.378 52.1329 132.359 57.3855 132.359C62.3291 132.359 65.4188 130.369 65.4188 122.407V67.3405H80.2496V121.744C80.2496 138.33 71.2894 145.628 58.0034 145.628C45.9534 145.628 39.1559 138.994 35.7572 131.032L47.8072 124.066Z"
+                            fill="black" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_4_37">
+                            <rect width="158.195" height="169.844" fill="white"
+                                transform="translate(0.225098 -0.00012207)" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <!-- FIGMA -->
+                <svg width="195" height="170" viewBox="0 0 195 170" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_4_52)">
+                        <path
+                            d="M129.801 113.23C147.723 113.23 162.252 100.556 162.252 84.9221C162.252 69.2884 147.723 56.6147 129.801 56.6147C111.88 56.6147 97.3511 69.2884 97.3511 84.9221C97.3511 100.556 111.88 113.23 129.801 113.23Z"
+                            fill="#19BCFE" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M64.9007 169.844C82.8225 169.844 97.351 157.171 97.351 141.537C97.351 137.269 97.351 127.833 97.351 113.229C82.773 113.229 71.9562 113.229 64.9007 113.229C46.9788 113.229 32.4503 125.903 32.4503 141.537C32.4503 157.171 46.9788 169.844 64.9007 169.844Z"
+                            fill="#09CF83" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M64.9007 113.23C70.8746 113.23 81.6914 113.23 97.351 113.23V56.6147C81.6914 56.6147 70.8746 56.6147 64.9007 56.6147C46.9788 56.6147 32.4503 69.2884 32.4503 84.9221C32.4503 100.556 46.9788 113.23 64.9007 113.23Z"
+                            fill="#A259FF" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M64.9007 56.6148C70.8746 56.6148 81.6914 56.6148 97.351 56.6148V0C81.6914 0 70.8746 0 64.9007 0C46.9788 0 32.4503 12.6737 32.4503 28.3074C32.4503 43.9411 46.9788 56.6148 64.9007 56.6148Z"
+                            fill="#F24E1E" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M129.801 56.6148H97.3511V0H129.801C147.723 0 162.252 12.6737 162.252 28.3074C162.252 43.9411 147.723 56.6148 129.801 56.6148Z"
+                            fill="#FF7262" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_4_52">
+                            <rect width="194.702" height="169.844" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+
             </div>
-    </div>
+        </div>
     </section>
-<footer class="bgdark footer">
-    <div class="footer_description">
-        <h3 class="font-2-p color-c7">Contato</h3>
-        <ul class="font-1-pp color-c5 contato_conteudo">
-            <li class="">al.pdjr@gmail.com</li>
-            <li><a href="https://github.com/juniorduarte-1/" target="_blank">Github/juniorduarte</a></li>
-            <li><a href="https://www.linkedin.com/in/juniorduarte12/" target="_blank">Linkedin/juniorduarte</a></li>
-        </ul>
-    </div>
-    <div class="footer_description">
-        <h3 class="font-2-p color-c7">Informações</h3>
-        <ul class="font-1-pp color-c5 informacoes_conteudo">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="#sobremim">Sobre mim</a></li>
-            <li><a href="#cursos">Cursos</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-        </ul>
-    </div>
-</footer>
-   
+    <footer class="bgdark footer">
+        <div class="footer_description">
+            <h3 class="font-2-p color-c7">Contato</h3>
+            <ul class="font-1-pp color-c5 contato_conteudo">
+                <li class="">al.pdjr@gmail.com</li>
+                <li><a href="https://github.com/juniorduarte-1/" target="_blank">Github/juniorduarte</a></li>
+                <li><a href="https://www.linkedin.com/in/juniorduarte12/" target="_blank">Linkedin/juniorduarte</a></li>
+            </ul>
+        </div>
+        <div class="footer_description">
+            <h3 class="font-2-p color-c7">Informações</h3>
+            <ul class="font-1-pp color-c5 informacoes_conteudo">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#sobremim">Sobre mim</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+            </ul>
+        </div>
+    </footer>
+
 </body>
+
 </html>
