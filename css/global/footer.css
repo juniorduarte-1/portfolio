@@ -88,3 +88,12 @@
   .informacoes_conteudo li a:hover::after {
     width: 100%;
   }
+
+  @media (max-width: 600px){
+    .footer{
+        flex-direction: column;
+    }
+    .informacoes_conteudo li{
+        text-align: start;
+    }
+  }
