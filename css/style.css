@@ -82,13 +82,18 @@
     gap: 40px;
     
 }
-
-
+.box_cursos{
+    max-width: 800px;
+    margin: 10px 0;
+    
+}
 .list_cursos{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    background-color: #f4f4f4;
+    padding: 20px 20px;
     text-align: center;
+    border-radius: 4px;
 
 }
 
@@ -96,42 +101,18 @@
     margin-bottom: 8px;
 }
 
-.box_cursos{  
-    background-color: #FAFAFA;
-    border: 0.1px solid #C2C2C2;
-    border-radius: 5px;
-    padding: 20px 40px;
-    margin: 10px 0;
-    transition: .3s;
-    
-    
-}
-
-.box_cursos:hover{
-    background-color: var(--color-c2);
-}
-
 .cursos_extra {
-    display: flex;
-    justify-content: space-between;
-    background-color: #2E931D;
-    border: 0.1px solid #168804;
-    border-radius: 5px;
-    padding: 20px 40px;
-    transition: .3s;
+    max-width: 400px;
 }
 
-.cursos_extra:hover{
-    background-color: var(--color-p2);
-}
 
 .lista_extra{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    flex: 1;
+    background-color: #2E931D;
+    padding: 12px 20px;
+    border-radius: 4px;
 }
-
 
 .independentes{
     margin: 18px 0 18px 14px ;
@@ -173,7 +154,9 @@
     gap: 24px;
     
 }
-
+.projetos_item a{
+    text-decoration: none;
+}
 .projetos_item h3{
     padding: 8px;
 }
@@ -194,6 +177,8 @@
 
 .projetos_item img{
     width: 350px;
+    border-radius: 4px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
     transition: .3s;
 }
 
@@ -222,7 +207,7 @@
         padding: 60px 60px 120px;
     }
     .intro h1{
-        font-size: 5rem;
+        font-size: 4.5rem;
     }
     .intro h2{
         font-size: 1rem;
@@ -236,17 +221,15 @@
         padding: 60px 60px 120px;
     }
     .intro h1{
-        font-size: 4.5rem;
+        font-size: 4rem;
     }
     .intro h2{
         font-size: 1rem;
     }
-        
-        
+                
     .cursos{
         grid-template-columns: 1fr;
-        padding: 60px 60px 120px;
-        
+        padding: 60px 60px 120px;        
     }
 
     .cursos h2{
@@ -391,8 +374,7 @@
     .box_cursos{  
        
         padding: 10px 10px;
-        margin: 10px 4%;
-            
+        margin: 10px 4%;            
         
     }
     .cursos h3{
@@ -447,25 +429,3 @@
 
 }
 
-.fadeInDown {
-    transform: translate3d(0, -20px, 0);
-  }
-  .fadeInUp {
-    transform: translate3d(0, 20px, 0);
-  }
-  .fadeInRight {
-    transform: translate3d(20px, 0, 0);
-  }
-  .fadeInLeft {
-    transform: translate3d(-20px, 0, 0);
-  }
-  
-  /* 7 Adicione o CSS Essencial abaixo */
-  [data-anime] {
-    opacity: 0;
-  }
-  .anime {
-    opacity: 1;
-    transform: none;
-    transition: transform 0.8s, opacity 0.8s;
-  }
