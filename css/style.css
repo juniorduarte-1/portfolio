@@ -299,10 +299,10 @@
     }
 }
 
-@media (max-width: 420px){
+@media (max-width: 460px){
 
     .cursos{
-        padding: 0;
+        padding: 20px;
         gap: 0;        
     }      
     .cursos h2{
@@ -310,7 +310,13 @@
       padding: 40px 0;
       
     }
+  
+    .box_cursos,
+    .cursos_extra{  
+        margin: 10px auto;          
         
+    }
+
     .projetos{
         padding: 40px 0 60px;
         gap: 0; 
@@ -320,15 +326,7 @@
         font-size: 4rem;
     }
 
-    .box_cursos{  
-        margin: 10px 4%;          
-        
-    }
-       
-    .cursos_extra {        
-        margin: 10px 4%;
-    }    
-
+  
     
     .tecnologias_items svg{
         margin: 20px;
@@ -371,10 +369,9 @@
         gap: 0;        
     }
         
-    .box_cursos{  
-       
-        padding: 10px 10px;
-        margin: 10px 4%;            
+    .box_cursos{        
+        padding: 0px 10px;
+                  
         
     }
     .cursos h3{
@@ -385,9 +382,8 @@
     }
     
     .cursos_extra {        
-        padding: 10px 10px;
-        margin: 10px 4%;
-        transition: .3s;
+        padding: 0px 10px;
+        
     }    
     
     .cursos h2{
